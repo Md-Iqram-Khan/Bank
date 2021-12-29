@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-rose-50">
+    <header>
+      <h1 class="text-5xl text-center my-4 font-semibold text-gray-700">
+        Wellcome To My Bank
+      </h1>
+    </header>
+    <main class="bg-cyan-800">
+      <section>
+        <div class="flex justify-center">
+          <div class="border my-2 w-1/4 p-2">
+            <h3 class="text-4xl mt-2 text-center text-white font-semibold">
+              LogIn
+            </h3>
+            <div class="mt-4">
+              <input
+                id="email"
+                type="text"
+                placeholder="Enter Email"
+                class="mb-2 p-2 w-full border rounded block"
+              />
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                class="p-2 w-full border rounded block"
+              />
+            </div>
+
+            <div class="flex justify-center">
+              <button
+                id="submitLogin"
+                class="bg-white font-bold px-2 py-2 border rounded my-4"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./test.js"></script>
+  </body>
+</html>

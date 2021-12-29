@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white-500">
+    <header class="bg-white">
+      <h1 class="text-4xl text-center my-4 font-semibold text-dark">
+        Let's Get Some Money
+      </h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+      <section>
+        <div class="grid grid-cols-3 gap-4 my-12">
+          <div class="bg-rose-500 p-8 rounded text-white">
+            <h1 class="text-2xl">Deposit</h1>
+            <h2 class="text-4xl">$<span id="depositTotal">00</span></h2>
+          </div>
+
+          <div class="bg-blue-900 p-8 rounded text-white">
+            <h1 class="text-2xl">Withdraw</h1>
+            <h2 class="text-4xl">$ <span id="withdrawTotal">00</span></h2>
+          </div>
+
+          <div class="bg-cyan-800 p-8 rounded text-white">
+            <h1 class="text-2xl">Balance</h1>
+            <h2 class="text-4xl">$<span id="balance">00</span></h2>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-orange-200 p-4 rounded">
+            <h3 class="text-3xl text-center text-gray-900 font-semibold">
+              Please Deposit Money
+            </h3>
+
+            <div class="mt-4">
+              <input
+                id="deposit"
+                type="number"
+                placeholder="Deposite Amount"
+                class="mb-2 p-2 w-full border border-gray-900 rounded block"
+              />
+            </div>
+
+            <div class="flex justify-center">
+              <button
+                id="submitDeposit"
+                class="
+                  bg-rose-700
+                  text-white
+                  font-bold
+                  px-2
+                  py-2
+                  border
+                  rounded
+                  my-4
+                "
+              >
+                SUBMIT
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-yellow-200 p-4 rounded">
+            <h3 class="text-3xl text-center text-gray-900 font-semibold">
+              Please Withdraw Money
+            </h3>
+
+            <div class="mt-4">
+              <input
+                id="withdraw"
+                type="number"
+                placeholder="Withdraw Amount"
+                class="mb-2 p-2 w-full border border-gray-900 rounded block"
+              />
+            </div>
+
+            <div class="flex justify-center">
+              <button
+                id="submitWithdraw"
+                class="
+                  bg-rose-700
+                  text-white
+                  font-bold
+                  px-2
+                  py-2
+                  border
+                  rounded
+                  my-4
+                "
+              >
+                SUBMIT
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./banking.js"></script>
+  </body>
+</html>
